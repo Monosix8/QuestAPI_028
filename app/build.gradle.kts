@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.localrestapi"
-        minSdk = 30
+        minSdk = 24
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -58,6 +58,7 @@ dependencies {
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.okhttp)
     implementation(libs.okhttp.logging)
+
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
