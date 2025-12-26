@@ -21,3 +21,8 @@ interface ServiceApiSiswa {
     @PUT("editTM.php")
     suspend fun editSatuSiswa(@Query("id")id: Int, @Body dataSiswa: DataSiswa): retrofit2.Response<Void>
 
+    @DELETE("deleteTM.php")
+    suspend fun hapusSatuSiswa(@Query("id")id:Int): retrofit2.Response<Void>
+
+
+}
